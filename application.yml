@@ -1,12 +1,12 @@
 eureka:
   instance:
     hostname: localhost
-#    non-secure-port-enabled: false
-#    secure-port-enabled: true
-#    secure-port: ${server.port}
+    non-secure-port-enabled: false
+    secure-port-enabled: true
+    secure-port: ${server.port}
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
-#      defaultZone: https://localhost:8761/eureka/
+#      defaultZone: http://localhost:8761/eureka/
+      defaultZone: https://localhost:8761/eureka/
